@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Title Picker",
+    "description": "Gets the title of the current tab",
+    "version": "1.0",
+    "background":{
+        "service-worker":"background.js"
+    },
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "hello_extensions.png"
+    }
+  }
