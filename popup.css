@@ -1,0 +1,28 @@
+body {
+    background: #f1f5f9;
+}
+.wrapper {
+    width: 300px;
+    text-align: center;
+}
+.btn-1 {
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    background: #00008B;
+    cursor: pointer;
+    color: wheat;
+}
+
+.selectedTitle{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titleValue{
+    margin-left: 5px;
+    font-weight: bold;
+}

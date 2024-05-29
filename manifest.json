@@ -3,11 +3,21 @@
     "name": "Title Picker",
     "description": "Gets the title of the current tab",
     "version": "1.0",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting"
+    ],
     "background":{
         "service-worker":"background.js"
     },
+    "action":{
+      "default_popup":"popup.html"
+    },
     "icons":{
-      "16":"/images/16.png"
+      "16":"/images/16.png",
+      "32":"/images/16.png",
+      "64":"/images/16.png"
     }
     
   }
