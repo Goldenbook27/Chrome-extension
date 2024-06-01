@@ -1,12 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "Title Picker",
-    "description": "Gets the title of the current tab",
+    "name": "Linked Profile Picker",
+    "description": "Gets the details of LinkedIn Profiles ",
     "version": "1.0",
     "permissions": [
       "tabs",
       "activeTab",
-      "scripting"
+      "http://localhost:3000/",
+      "https://www.linkedin.com/*"
     ],
     "background":{
         "service-worker":"background.js"
@@ -15,9 +16,15 @@
       "default_popup":"popup.html"
     },
     "icons":{
-      "16":"/images/16.png",
-      "32":"/images/16.png",
-      "64":"/images/16.png"
-    }
+      "16":"/images/images.png",
+      "32":"/images/images.png",
+      "64":"/images/images.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/in/*"],
+        "js": ["content.js"]
+      }
+    ]
     
   }

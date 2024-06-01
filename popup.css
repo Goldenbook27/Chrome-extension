@@ -26,3 +26,18 @@ body {
     margin-left: 5px;
     font-weight: bold;
 }
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+button {
+    width: 100%;
+}
+#profile-data {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
